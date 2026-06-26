@@ -98,7 +98,7 @@ function ProductPage() {
             </motion.div>
             {product.images.length > 1 && (
               <div className="mt-4 grid grid-cols-5 gap-2">
-                {product.images.map((src, i) => (
+                {product.images.map((src: string, i: number) => (
                   <button
                     key={i}
                     onClick={() => setActive(i)}
@@ -142,7 +142,7 @@ function ProductPage() {
             <div className="mt-8">
               <p className="text-sm font-medium mb-3">Color: <span className="text-muted-foreground">{color}</span></p>
               <div className="flex gap-2">
-                {product.colors.map((c) => (
+                {product.colors.map((c: { name: string; hex: string }) => (
                   <button
                     key={c.name}
                     onClick={() => setColor(c.name)}
