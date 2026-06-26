@@ -82,7 +82,7 @@ function Shop() {
             <ul className="space-y-1.5 max-h-80 overflow-auto pr-2">
               <li>
                 <button
-                  onClick={() => navigate({ search: (s) => ({ ...s, category: undefined }) })}
+                  onClick={() => navigate({ search: (s: typeof search) => ({ ...s, category: undefined }) })}
                   className={`text-sm w-full text-left py-1 ${!search.category ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
                 >
                   All
@@ -91,7 +91,7 @@ function Shop() {
               {categories.map((c) => (
                 <li key={c.slug}>
                   <button
-                    onClick={() => navigate({ search: (s) => ({ ...s, category: c.slug }) })}
+                    onClick={() => navigate({ search: (s: typeof search) => ({ ...s, category: c.slug }) })}
                     className={`text-sm w-full text-left py-1 ${search.category === c.slug ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
                   >
                     {c.name}
@@ -122,7 +122,7 @@ function Shop() {
             <div className="flex items-center gap-2">
               <select
                 value={search.sort ?? ""}
-                onChange={(e) => navigate({ search: (s) => ({ ...s, sort: (e.target.value || undefined) as never }) })}
+                onChange={(e) => navigate({ search: (s: typeof search) => ({ ...s, sort: (e.target.value || undefined) as typeof search.sort }) })}
                 className="rounded-full border border-border bg-background px-4 py-2 text-sm"
               >
                 <option value="">Sort: Featured</option>
