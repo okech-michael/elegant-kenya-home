@@ -8,8 +8,8 @@ export const Route = createFileRoute("/order-tracking")({
   validateSearch: z.object({ ref: z.string().optional() }),
   head: () => ({
     meta: [
-      { title: "Track Order — Nyumba Furniture" },
-      { name: "description", content: "Track your Nyumba furniture delivery." },
+      { title: "Track Order — Standard Furniture" },
+      { name: "description", content: "Track your Standard Furniture delivery." },
       { property: "og:url", content: "/order-tracking" },
     ],
     links: [{ rel: "canonical", href: "/order-tracking" }],

@@ -6,9 +6,9 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/categories")({
   head: () => ({
     meta: [
-      { title: "Categories — Nyumba Furniture" },
+      { title: "Categories — Standard Furniture" },
       { name: "description", content: "Explore all furniture categories—office, living, dining, bedroom, storage, events and decor." },
-      { property: "og:title", content: "Categories — Nyumba Furniture" },
+      { property: "og:title", content: "Categories — Standard Furniture" },
       { property: "og:url", content: "/categories" },
     ],
     links: [{ rel: "canonical", href: "/categories" }],

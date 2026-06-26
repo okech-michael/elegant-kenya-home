@@ -18,7 +18,7 @@ export const Route = createFileRoute("/products/$slug")({
     if (!p) return {};
     return {
       meta: [
-        { title: `${p.name} — Nyumba Furniture` },
+        { title: `${p.name} — Standard Furniture` },
         { name: "description", content: p.shortDescription },
         { property: "og:title", content: p.name },
         { property: "og:description", content: p.shortDescription },

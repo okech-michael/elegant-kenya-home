@@ -7,10 +7,10 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+import previewImage from "@/assets/hero-living.jpg";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
@@ -38,9 +38,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
   return (
     <div className="container-x py-32 text-center">
       <h1 className="font-display text-3xl">This page didn't load</h1>
@@ -65,24 +62,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nyumba — Premium Furniture, Crafted in Nairobi" },
+      { title: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       {
         name: "description",
         content:
           "Premium handcrafted furniture from Nairobi. Office, living, dining and bedroom collections delivered anywhere in Kenya.",
       },
-      { name: "author", content: "Nyumba Furniture" },
-      { property: "og:title", content: "Nyumba — Premium Furniture, Crafted in Nairobi" },
+      { name: "author", content: "Standard Furniture" },
+      { property: "og:title", content: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       { property: "og:description", content: "Nairobi Home Furnishings is a premium e-commerce platform for buying furniture online in Kenya." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Nyumba" },
+      { property: "og:site_name", content: "Standard Furniture" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#221f1c" },
-      { name: "twitter:title", content: "Nyumba — Premium Furniture, Crafted in Nairobi" },
+      { name: "twitter:title", content: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       { name: "description", content: "Nairobi Home Furnishings is a premium e-commerce platform for buying furniture online in Kenya." },
       { name: "twitter:description", content: "Nairobi Home Furnishings is a premium e-commerce platform for buying furniture online in Kenya." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a7fde3f-4725-4d13-96ed-edcdc1a1f889/id-preview-276fe172--7e9cef0a-a58e-44f7-a8ab-223941ab2aad.lovable.app-1782506569252.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a7fde3f-4725-4d13-96ed-edcdc1a1f889/id-preview-276fe172--7e9cef0a-a58e-44f7-a8ab-223941ab2aad.lovable.app-1782506569252.png" },
+      { property: "og:image", content: previewImage },
+      { name: "twitter:image", content: previewImage },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -4,8 +4,8 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Nyumba Furniture" },
-      { name: "description", content: "Terms governing purchases from Nyumba Furniture." },
+      { title: "Terms & Conditions — Standard Furniture" },
+      { name: "description", content: "Terms governing purchases from Standard Furniture." },
       { property: "og:url", content: "/terms" },
     ],
     links: [{ rel: "canonical", href: "/terms" }],
@@ -22,7 +22,7 @@ function Terms() {
         <Block t="Payment">Payment is taken in full at checkout. Orders are processed once payment has been confirmed.</Block>
         <Block t="Delivery">Delivery timeframes are estimates. We are not liable for delays caused by circumstances outside our control.</Block>
         <Block t="Returns">Returns are accepted within 7 days of delivery for unused items in original condition. Custom orders are non-returnable.</Block>
-        <Block t="Warranty">Every Nyumba product carries a 2-year manufacturer warranty against structural defects.</Block>
+        <Block t="Warranty">Every Standard Furniture product carries a 2-year manufacturer warranty against structural defects.</Block>
         <Block t="Liability">Our liability is limited to the value of the goods purchased.</Block>
         <Block t="Governing law">These terms are governed by the laws of the Republic of Kenya.</Block>
       </article>

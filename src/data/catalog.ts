@@ -1,4 +1,4 @@
-// Mock catalog data. Replace with backend (Lovable Cloud) when ready.
+// Mock catalog data. Replace with backend when ready.
 
 export type Category = {
   slug: string;

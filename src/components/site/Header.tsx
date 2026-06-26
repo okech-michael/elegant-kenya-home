@@ -40,7 +40,7 @@ export function Header() {
             <span className="block h-2 w-2 rounded-full bg-gold" />
           </span>
           <span className="font-display text-xl tracking-tight">
-            Nyumba<span className="text-gold">.</span>
+            Standard Furniture<span className="text-gold">.</span>
           </span>
         </Link>
 

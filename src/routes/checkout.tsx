@@ -11,7 +11,7 @@ const COUNTIES = ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Eldoret", "Thika", 
 export const Route = createFileRoute("/checkout")({
   head: () => ({
     meta: [
-      { title: "Checkout — Nyumba Furniture" },
+      { title: "Checkout — Standard Furniture" },
       { name: "description", content: "Complete your order with secure payment." },
       { property: "og:url", content: "/checkout" },
       { name: "robots", content: "noindex" },

@@ -6,9 +6,9 @@ import craftImg from "@/assets/craftsmanship.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Nyumba Furniture" },
-      { name: "description", content: "Nyumba is a Nairobi-based furniture maker producing heirloom-quality pieces for modern Kenyan homes and offices." },
-      { property: "og:title", content: "About — Nyumba Furniture" },
+      { title: "About — Standard Furniture" },
+      { name: "description", content: "Standard Furniture is a Nairobi-based furniture maker producing heirloom-quality pieces for modern Kenyan homes and offices." },
+      { property: "og:title", content: "About — Standard Furniture" },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -22,7 +22,7 @@ function About() {
       <PageHero
         eyebrow="Our story"
         title="A workshop in Nairobi. A standard kept everywhere."
-        description="Nyumba was founded in 2018 by a small team of Kenyan designers and master carpenters with a single goal—to make heirloom furniture without compromise."
+        description="Standard Furniture was founded in 2018 by a small team of Kenyan designers and master carpenters with a single goal—to make heirloom furniture without compromise."
       />
       <section className="container-x pb-24 grid md:grid-cols-2 gap-12 items-center">
         <Reveal>

@@ -17,13 +17,13 @@ import craftImg from "@/assets/craftsmanship.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nyumba — Premium Furniture, Crafted in Nairobi" },
+      { title: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       {
         name: "description",
         content:
           "Browse our collection of executive desks, sofas, dining sets and bedroom furniture. Delivered anywhere in Kenya.",
       },
-      { property: "og:title", content: "Nyumba — Premium Furniture, Crafted in Nairobi" },
+      { property: "og:title", content: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FurnitureStore",
-          name: "Nyumba Furniture",
+          name: "Standard Furniture",
           address: { "@type": "PostalAddress", addressLocality: "Nairobi", addressCountry: "KE" },
           telephone: "+254788332542",
           priceRange: "KES",
@@ -248,13 +248,13 @@ function WhyUs() {
           </div>
         </Reveal>
         <div>
-          <Reveal><p className="eyebrow text-gold">Why Nyumba</p></Reveal>
+          <Reveal><p className="eyebrow text-gold">Why Standard Furniture</p></Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-3 font-display text-4xl md:text-5xl">A standard of quality, kept.</h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-bone/70 max-w-lg">
-              Every Nyumba piece begins with kiln-dried hardwood, traditional joinery and a slow, hand-finished process.
+              Every Standard Furniture piece begins with kiln-dried hardwood, traditional joinery and a slow, hand-finished process.
             </p>
           </Reveal>
           <div className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-10">
@@ -280,7 +280,7 @@ function Testimonials() {
   const reviews = [
     { quote: "The conference table is the most beautiful piece of furniture in our office. Impeccable finish.", name: "Wanjiku M.", role: "Operations Lead, Westlands" },
     { quote: "Delivery to Kisumu was on time and the team assembled everything. Couldn't be happier.", name: "Brian O.", role: "Homeowner, Kisumu" },
-    { quote: "We furnished our entire reception with Nyumba. The quality matches anything imported.", name: "Aisha K.", role: "Architect, Nairobi" },
+    { quote: "We furnished our entire reception with Standard Furniture. The quality matches anything imported.", name: "Aisha K.", role: "Architect, Nairobi" },
   ];
   return (
     <section className="container-x py-24 md:py-32">

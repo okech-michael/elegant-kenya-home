@@ -7,8 +7,8 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Nyumba Furniture" },
-      { name: "description", content: "Get in touch with Nyumba Furniture in Nairobi. Phone, WhatsApp, email and showroom." },
+      { title: "Contact — Standard Furniture" },
+      { name: "description", content: "Get in touch with Standard Furniture in Nairobi. Phone, WhatsApp, email and showroom." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -25,12 +25,12 @@ function Contact() {
           <div className="space-y-6">
             <Item icon={Phone} label="Phone" value="+254 788 332 542" href="tel:+254788332542" />
             <Item icon={MessageCircle} label="WhatsApp" value="+254 788 332 542" href="https://wa.me/254788332542" />
-            <Item icon={Mail} label="Email" value="hello@nyumba.co.ke" href="mailto:hello@nyumba.co.ke" />
+            <Item icon={Mail} label="Email" value="hello@Standard Furniture.co.ke" href="mailto:hello@Standard Furniture.co.ke" />
             <Item icon={MapPin} label="Showroom" value="Mombasa Road, Nairobi, Kenya" />
             <Item icon={Clock} label="Hours" value="Mon–Sat · 9:00 AM – 6:00 PM" />
             <div className="mt-6 aspect-[16/10] overflow-hidden rounded-2xl border border-border">
               <iframe
-                title="Nyumba Showroom"
+                title="Standard Furniture Showroom"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=36.78%2C-1.32%2C36.86%2C-1.27&layer=mapnik"
                 className="h-full w-full"
                 loading="lazy"

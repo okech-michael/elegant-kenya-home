@@ -16,7 +16,7 @@ const FAQS = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Nyumba Furniture" },
+      { title: "FAQ — Standard Furniture" },
       { name: "description", content: "Frequently asked questions about delivery, payments, warranties and customization." },
       { property: "og:url", content: "/faq" },
     ],

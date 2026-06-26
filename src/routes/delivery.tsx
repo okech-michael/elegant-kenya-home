@@ -6,8 +6,8 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/delivery")({
   head: () => ({
     meta: [
-      { title: "Delivery Information — Nyumba Furniture" },
-      { name: "description", content: "Delivery zones, fees and timelines for Nyumba furniture across Kenya." },
+      { title: "Delivery Information — Standard Furniture" },
+      { name: "description", content: "Delivery zones, fees and timelines for Standard Furniture across Kenya." },
       { property: "og:url", content: "/delivery" },
     ],
     links: [{ rel: "canonical", href: "/delivery" }],

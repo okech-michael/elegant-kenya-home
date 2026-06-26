@@ -11,7 +11,7 @@ export function Footer() {
               <span className="grid h-9 w-9 place-items-center rounded-full bg-gold/20">
                 <span className="h-2 w-2 rounded-full bg-gold" />
               </span>
-              <span className="font-display text-2xl">Nyumba.</span>
+              <span className="font-display text-2xl">Standard Furniture.</span>
             </div>
             <p className="mt-5 max-w-sm text-sm text-bone/70 leading-relaxed">
               Premium, handcrafted furniture from Nairobi—delivered anywhere in Kenya. Designed for the way modern Kenyans live and work.
@@ -51,7 +51,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-t border-bone/10 pt-8 text-xs text-bone/60">
-          <p>&copy; {new Date().getFullYear()} Nyumba Furniture, Nairobi. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Standard Furniture, Nairobi. All rights reserved.</p>
           <p>
             Showroom: Mombasa Road, Nairobi &nbsp;·&nbsp; +254 788 332 542
           </p>

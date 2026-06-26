@@ -16,9 +16,9 @@ export const Route = createFileRoute("/shop")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Shop — Nyumba Furniture" },
+      { title: "Shop — Standard Furniture" },
       { name: "description", content: "Browse premium furniture: sofas, desks, dining sets and more. Delivered across Kenya." },
-      { property: "og:title", content: "Shop — Nyumba Furniture" },
+      { property: "og:title", content: "Shop — Standard Furniture" },
       { property: "og:url", content: "/shop" },
     ],
     links: [{ rel: "canonical", href: "/shop" }],

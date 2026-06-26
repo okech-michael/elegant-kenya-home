@@ -8,7 +8,7 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/cart")({
   head: () => ({
     meta: [
-      { title: "Your Cart — Nyumba Furniture" },
+      { title: "Your Cart — Standard Furniture" },
       { name: "description", content: "Review the items in your cart and proceed to checkout." },
       { property: "og:url", content: "/cart" },
     ],
