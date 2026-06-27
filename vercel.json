@@ -1,18 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/client" }
-    },
-    {
-      "src": "src/server.ts",
-      "use": "@vercel/node"
+  "functions": {
+    "api/index.ts": {
+      "runtime": "nodejs20.x"
     }
-  ],
+  },
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/src/server.ts" }
+    { "src": "/(.*)", "dest": "/api/index.ts" }
   ]
 }
