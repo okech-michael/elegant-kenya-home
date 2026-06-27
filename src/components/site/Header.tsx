@@ -51,7 +51,7 @@ export function Header() {
               to={n.to}
               activeProps={{ className: "text-foreground" }}
               activeOptions={{ exact: n.to === "/" }}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
+              className="text-base text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
             >
               {n.label}
             </Link>
