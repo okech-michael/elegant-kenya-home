@@ -10,7 +10,6 @@ import {
 import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import previewImage from "@/assets/hero-living.jpg";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
@@ -78,8 +77,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
       { name: "description", content: "Nairobi Home Furnishings is a premium e-commerce platform for buying furniture online in Kenya." },
       { name: "twitter:description", content: "Nairobi Home Furnishings is a premium e-commerce platform for buying furniture online in Kenya." },
-      { property: "og:image", content: previewImage },
-      { name: "twitter:image", content: previewImage },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

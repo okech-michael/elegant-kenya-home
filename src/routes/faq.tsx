@@ -18,6 +18,10 @@ export const Route = createFileRoute("/faq")({
     meta: [
       { title: "FAQ — Standard Furniture" },
       { name: "description", content: "Frequently asked questions about delivery, payments, warranties and customization." },
+      { property: "og:title", content: "Furniture FAQs — Standard Furniture" },
+      { property: "og:description", content: "Answers about delivery, payments, furniture warranties, customization and returns." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/faq" },
     ],
     links: [{ rel: "canonical", href: "/faq" }],

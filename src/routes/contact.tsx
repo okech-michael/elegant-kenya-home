@@ -9,6 +9,10 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact — Standard Furniture" },
       { name: "description", content: "Get in touch with Standard Furniture in Nairobi. Phone, WhatsApp, email and showroom." },
+      { property: "og:title", content: "Contact Standard Furniture in Nairobi" },
+      { property: "og:description", content: "Reach our Nairobi furniture team by phone, WhatsApp, email or at the showroom." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],

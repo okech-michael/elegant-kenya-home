@@ -24,6 +24,13 @@ export const Route = createFileRoute("/")({
           "Browse our collection of executive desks, sofas, dining sets and bedroom furniture. Delivered anywhere in Kenya.",
       },
       { property: "og:title", content: "Standard Furniture — Premium Furniture, Crafted in Nairobi" },
+      {
+        property: "og:description",
+        content:
+          "Browse our collection of executive desks, sofas, dining sets and bedroom furniture. Delivered anywhere in Kenya.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],

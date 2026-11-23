@@ -47,6 +47,7 @@ export function Footer() {
             { to: "/privacy", label: "Privacy" },
             { to: "/terms", label: "Terms" },
             { to: "/contact", label: "Showroom" },
+            { to: "/admin", label: "Admin demo" },
           ]} />
         </div>
 

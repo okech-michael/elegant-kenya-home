@@ -13,6 +13,10 @@ export const Route = createFileRoute("/checkout")({
     meta: [
       { title: "Checkout — Standard Furniture" },
       { name: "description", content: "Complete your order with secure payment." },
+      { property: "og:title", content: "Checkout — Standard Furniture" },
+      { property: "og:description", content: "Complete your Standard Furniture order with delivery details and payment selection." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/checkout" },
       { name: "robots", content: "noindex" },
     ],

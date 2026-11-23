@@ -6,6 +6,10 @@ export const Route = createFileRoute("/terms")({
     meta: [
       { title: "Terms & Conditions — Standard Furniture" },
       { name: "description", content: "Terms governing purchases from Standard Furniture." },
+      { property: "og:title", content: "Terms & Conditions — Standard Furniture" },
+      { property: "og:description", content: "Review the terms for orders, payment, delivery, returns and warranties." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/terms" },
     ],
     links: [{ rel: "canonical", href: "/terms" }],

@@ -8,6 +8,10 @@ export const Route = createFileRoute("/delivery")({
     meta: [
       { title: "Delivery Information — Standard Furniture" },
       { name: "description", content: "Delivery zones, fees and timelines for Standard Furniture across Kenya." },
+      { property: "og:title", content: "Furniture Delivery Across Kenya" },
+      { property: "og:description", content: "View delivery zones, fees and estimated timelines for Standard Furniture orders." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/delivery" },
     ],
     links: [{ rel: "canonical", href: "/delivery" }],

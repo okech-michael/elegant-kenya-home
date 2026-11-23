@@ -10,6 +10,10 @@ export const Route = createFileRoute("/order-tracking")({
     meta: [
       { title: "Track Order — Standard Furniture" },
       { name: "description", content: "Track your Standard Furniture delivery." },
+      { property: "og:title", content: "Track Your Furniture Order" },
+      { property: "og:description", content: "Follow your Standard Furniture order from confirmation through delivery." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/order-tracking" },
     ],
     links: [{ rel: "canonical", href: "/order-tracking" }],

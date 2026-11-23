@@ -6,6 +6,10 @@ export const Route = createFileRoute("/privacy")({
     meta: [
       { title: "Privacy Policy — Standard Furniture" },
       { name: "description", content: "How Standard Furniture collects, uses, and protects your information." },
+      { property: "og:title", content: "Privacy Policy — Standard Furniture" },
+      { property: "og:description", content: "Learn how Standard Furniture handles and protects customer information." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/privacy" },
     ],
     links: [{ rel: "canonical", href: "/privacy" }],

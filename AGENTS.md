@@ -1,0 +1,1 @@
+The `/admin` route is a frontend-only prototype backed by static catalog and sample order data, with in-page edits because this project’s selected scope excludes backend persistence.

@@ -10,6 +10,10 @@ export const Route = createFileRoute("/cart")({
     meta: [
       { title: "Your Cart — Standard Furniture" },
       { name: "description", content: "Review the items in your cart and proceed to checkout." },
+      { property: "og:title", content: "Your Cart — Standard Furniture" },
+      { property: "og:description", content: "Review your selected furniture and continue to checkout." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/cart" },
     ],
     links: [{ rel: "canonical", href: "/cart" }],
